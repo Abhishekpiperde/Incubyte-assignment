@@ -24,3 +24,9 @@ test('returns 13 for custom delimiter "//;\n1;4;8"', () => {
     const calculator = new StringCalculator();
     expect(calculator.add("//;\n1;4;8")).toBe(13);
 });
+
+test('throws error for negative numbers', () => {
+    const calculator = new StringCalculator();
+    expect(() => calculator.add("1,-4,5,-7")).toThrow("Negative numbers not allowed: -4, -7");
+});
+

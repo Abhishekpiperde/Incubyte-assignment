@@ -10,7 +10,13 @@ class StringCalculator {
         }
 
         const parts = numbers.split(delimiter);
-        return parts.reduce((sum, num) => sum + parseInt(num), 0);
+        const negatives = parts.filter(num => parseInt(num) < 0);
+
+        if (negatives.length > 0) {
+            throw new Error(`Negative numbers not allowed: ${negatives.join(", ")}`);
+        }
+
+        return parts.reduce((sum, num) => sum + (parseInt(num) <= 1000 ? parseInt(num) : 0), 0);
     }
 }
 
