@@ -18,4 +18,9 @@ test('returns 4 for input "1,3"', () => {
 test('returns 3 for input "1\n2"', () => {
     const calculator = new StringCalculator();
     expect(calculator.add("1\n2")).toBe(3);
-  });
+});
+
+test('returns 13 for custom delimiter "//;\n1;4;8"', () => {
+    const calculator = new StringCalculator();
+    expect(calculator.add("//;\n1;4;8")).toBe(13);
+});

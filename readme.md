@@ -11,6 +11,7 @@ The goal of this project is to create a calculator that can add numbers provided
 - **Handles single numbers**.
 - **Handles two numbers separated by a comma**.
 - **Handles numbers separated by newlines**.
+- **Supports custom delimiters**.
 
 ## Prerequisites
 
@@ -35,3 +36,4 @@ Clone the repository and install dependencies:
 - **Test Case 2**: If the input is a single number, return the number itself.
 - **Test Case 3**: If the input has two numbers separated by a comma, return their sum.
 - **Test Case 4**: If the input has numbers separated by newlines, return their sum.
+- **Test Case 5**: If the input uses a custom delimiter, handle it properly.
