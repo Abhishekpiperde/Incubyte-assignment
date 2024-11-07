@@ -12,6 +12,8 @@ The goal of this project is to create a calculator that can add numbers provided
 - **Handles two numbers separated by a comma**.
 - **Handles numbers separated by newlines**.
 - **Supports custom delimiters**.
+- **Throws exceptions for negative numbers**.
+- **Ignores numbers greater than 1000**.
 
 ## Prerequisites
 
@@ -37,3 +39,5 @@ Clone the repository and install dependencies:
 - **Test Case 3**: If the input has two numbers separated by a comma, return their sum.
 - **Test Case 4**: If the input has numbers separated by newlines, return their sum.
 - **Test Case 5**: If the input uses a custom delimiter, handle it properly.
+- **Test Case 6**: If the input contains negative numbers, throw an exception with the negative numbers listed.
+- **Test Case 7**: If the input contains numbers greater than 1000, ignore those numbers.

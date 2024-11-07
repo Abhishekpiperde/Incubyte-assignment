@@ -30,3 +30,7 @@ test('throws error for negative numbers', () => {
     expect(() => calculator.add("1,-4,5,-7")).toThrow("Negative numbers not allowed: -4, -7");
 });
 
+test('ignores numbers greater than 1000', () => {
+    const calculator = new StringCalculator();
+    expect(calculator.add("2,1001,3")).toBe(5);
+});
