@@ -1,4 +1,4 @@
-Incubyte assignment :
+# Incubyte assignment :
 
 # StringCalculator - TDD Kata
 
@@ -8,6 +8,8 @@ The goal of this project is to create a calculator that can add numbers provided
 ## Features
 
 - **Handles empty strings**.
+- **Handles single numbers**.
+- **Handles two numbers separated by a comma**.
 
 ## Prerequisites
 
@@ -25,6 +27,9 @@ Clone the repository and install dependencies:
 ## Execution 
 - npm test ( To run the test cases )
 
+
 ## Test Cases
 
 - **Test Case 1**: If the input string is empty, return 0.
+- **Test Case 2**: If the input is a single number, return the number itself.
+- **Test Case 3**: If the input has two numbers separated by a comma, return their sum.
