@@ -14,3 +14,8 @@ test('returns 4 for input "1,3"', () => {
     const calculator = new StringCalculator();
     expect(calculator.add("1,3")).toBe(4);
 });
+
+test('returns 3 for input "1\n2"', () => {
+    const calculator = new StringCalculator();
+    expect(calculator.add("1\n2")).toBe(3);
+  });
